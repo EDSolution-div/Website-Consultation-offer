@@ -1,0 +1,123 @@
+@media (max-width: 599px) {
+    /*Mobile*/
+
+    #Navbar {
+        padding: 20px 20px;
+    }
+
+    .menu {
+        margin-left: 0em;
+    }
+
+    #Navbar ul {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        left: 0%;
+        top: 11%;
+        width: 50%;
+        position: absolute;
+        transform: translateY(-10px);
+        transition: transform 0.5s ease;
+        background: #fff;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    #Navbar ul.view {
+        opacity: 1;
+        transform: translateY(10px);
+        transition: transform 0.5s ease;
+    }
+
+    #Navbar ul li {
+        padding: 15px;
+        list-style: none;
+    }
+    
+    #Navbar ul li a {
+        color: #0288D1;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #Navbar ul li a:hover,
+    #Navbar ul li a.active {
+    background: #064646;
+    color: #0288D1;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+    
+
+    .menu {
+        display: initial;
+    }
+
+    #Hero {
+        padding: 20px 20px;
+        height: 50vh;
+    }
+    
+    #Hero  h2 {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    #Hero p {
+        width: 80%;
+    }
+
+    .links {
+        left: 85%;
+    }
+
+    #Consultation{
+        padding: 20px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        /*background: #3c4c66;*/
+    }
+
+    .Audit-info {
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    /*Tablet*/
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /*Small LTP*/
+
+    #Hero {
+        padding: 20px 40px;
+    }
+    
+    #Consultation{
+        padding: 20px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        /*background: #3c4c66;*/
+    }
+
+    #Navbar img {
+        width: 50%;
+        height: 30vh;
+        object-fit: cover;
+    }
+    
+
+
+}
